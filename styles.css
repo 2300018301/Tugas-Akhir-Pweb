@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --sectionPadding: 6rem 0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h5,h6, strong {
+    color: #000000;
+}
+h4 {
+    color: #ffffff;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+span,label,input,textarea,li {
+    color: #080808;
+}
+q {
+    color: #ffffff;
+}
+r {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+/* Title */
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+    color: #000000;
+
+}
+.sectionn-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+    color: #ffffff;
+
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #ffffff;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0,9rem;
+}
+.pree-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #020000;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0,9rem;
+}
+
+
+/* layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: #232e35;
+}
+
+nav ul li {
+    color: #000000;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0,5rem 0 1rem;
+}
+
+.hero-name span {
+    color: #490bf1;
+}
+
+.hero-right img {
+    width: 90%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+/*About Section*/
+#About {
+    background-color: #000000;
+    padding: var(--sectionPadding);
+}
+
+.About .pre-title {
+    margin: 0 auto;
+    color: #f1f1f1;
+}
+
+.About-title {
+    text-align: center;
+    color: #f1f1f1;
+}
+
+/* Hobby section*/
+
+#Hobby {
+    padding: var(--sectionPadding);
+}
+
+.Hobby {
+    border-radius: 0.7rem;
+    overflow: hidden;
+    border: 1px solid #f1f1f1 ;
+}
+
+.Hobby-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Hobby-info {
+    padding: 2rem 1.5rem;
+}
+
+.Hobby-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Hobby h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.Hobby-title a svg:hover {
+    fill: #7e74f1;
+}
+.Hobby-title a svg {
+    transition: 0.2s ease-in-out;
+}
+
+.Hobby-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.Hobby-tags div {
+    font-size: .9rem;
+    border: 1px solid #f1f1f1;
+    padding: .4rem 1rem;
+    color: #656d72;
+}
+
+#SkillAndEducation {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; 
+}
+
+/* Skill Section */
+#Skill {
+    padding: var(--sectionPadding);
+    background: #ffffff;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+.skill-left p {
+    font-size: 1.4rem;
+}
+
+.skills-title {
+    padding: 2rem 0; 
+    text-align: left;
+    font-size: 2rem;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skill-right ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+#Education {
+    padding: 4rem 0; 
+    background: #000000;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.education-item {
+    display: flex;
+    gap: 2rem;
+}
+
+.education-item .line {
+    padding: 0 0.7rem;
+}
+
+.education-item .line div {
+    width: 2px;
+    height: 100%;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.education-item .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.education-info p {
+    margin: .6rem 0 1.4rem;
+}
+
+.education-year {
+    margin-bottom: 3rem;
+}
+
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: .75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+
+    color: #000203;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: .75rem 1.3rem;
+    background-color: #5a4cf3;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: #120792;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-item-icon {
+    background: #ffffff;
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-icon svg {
+    fill: #5547eb;
+}
+
+.contact-item-detail h4 {
+    margin-bottom: 0.6rem;
+}
+
+/*footer*/
+footer {
+    padding: 4rem 0;
+    background: #000000;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons {
+    margin: 0 .5rem;
+}
+
+.footer-icons svg {
+    fill: #ffffff;
+}
+
+.footer-icons a:hover svg {
+    fill: #717175;
+}
